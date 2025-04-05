@@ -18,3 +18,22 @@
     box-sizing: border-box;
   }
   
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  #root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* 可选：确保高度撑满 */
+    display: flex;      /* 可选：启用 flex 布局 */
+    flex-direction: column; /* 可选：让 Header、Main、Footer 垂直排列 */
+  }

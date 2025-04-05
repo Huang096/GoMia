@@ -1,0 +1,83 @@
+/**
+ * Copyright 2025 huangzheheng
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/* 整个 Footer 的背景、文字颜色等可自定义 */
+/* 外层容器：强制撑满宽度 */
+.site-footer {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    padding: 40px 0; /* 只控制上下间距 */
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 内层容器：控制内容宽度（与header-container对齐） */
+  .footer-content {
+    width: 90%;
+    max-width: 1200px; /* 可选：限制最大宽度 */
+    margin: 0 auto;    /* 水平居中 */
+  }
+  
+  /* 上半部分主内容 */
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* 公司信息 */
+  .footer-info {
+    flex: 1; /* 占据剩余空间 */
+  }
+  
+  /* 二维码区域 */
+  .footer-qr {
+    display: flex;
+    gap: 20px; /* 替代margin-left，更现代的间距方式 */
+  }
+  
+  /* 单个二维码块 */
+  .qr-item {
+    text-align: center;
+  }
+  
+  /* 版权信息 */
+  .footer-copyright {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+    .footer-main {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .footer-qr {
+      margin-top: 20px;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .footer-copyright {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
