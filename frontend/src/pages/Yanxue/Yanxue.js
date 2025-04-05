@@ -12,3 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// src/pages/Yanxue/Yanxue.js
+import React from 'react';
+import './Yanxue.css';
+
+const Yanxue = () => {
+  return (
+    <div className="yanxue-page">
+      <h1>欢迎来到 Yanxue 页面</h1>
+      <p>这里是一些示例内容。</p>
+    </div>
+  );
+};
+
+export default Yanxue;

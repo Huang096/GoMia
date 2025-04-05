@@ -12,3 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// src/pages/Consult/Consult.js
+import React from 'react';
+import './Consult.css';
+
+const Consult = () => {
+  return (
+    <div className="consult-page">
+      <h1>欢迎来到 Consult 页面</h1>
+      <p>这里是一些示例内容。</p>
+    </div>
+  );
+};
+
+export default Consult;

@@ -12,3 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// src/pages/Contact/Contact.js
+import React from 'react';
+import './Contact.css';
+
+const Contact = () => {
+  return (
+    <div className="contact-page">
+      <h1>欢迎来到 Contact 页面</h1>
+      <p>这里是一些示例内容。</p>
+    </div>
+  );
+};
+
+export default Contact;

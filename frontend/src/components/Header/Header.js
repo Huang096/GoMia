@@ -15,6 +15,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -50,11 +51,11 @@ const Header = () => {
         {/* 导航菜单 */}
         <nav className="main-nav">
           <ul>
-            <li><a href="#">首页</a></li>
-            <li><a href="#">研学服务</a></li>
-            <li><a href="#">选校平台</a></li>
-            <li><a href="#">教育咨询</a></li>
-            <li><a href="#">关于我们</a></li>
+            <li><Link to="/">首页</Link></li>
+            <li><Link to="/yanxue">研学服务</Link></li>
+            <li><Link to="/xuanxiao">选校平台</Link></li>
+            <li><Link to="/consult">教育咨询</Link></li>
+            <li><Link to="/contact">联系我们</Link></li>
             <li>
                 <a href="#" className="search-icon">
                     <FaSearch />

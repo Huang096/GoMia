@@ -11,3 +11,18 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+
+// src/pages/Home/Home.js
+import React from 'react';
+import './Home.css';
+
+const Home = () => {
+  return (
+    <div className="home-page">
+      <h1>欢迎来到 Home 页面</h1>
+      <p>这里是一些示例内容。</p>
+    </div>
+  );
+};
+
+export default Home;
