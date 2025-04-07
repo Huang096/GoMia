@@ -15,10 +15,15 @@
 // src/pages/Home/Home.js
 import React from 'react';
 import './Home.css';
+import Carousel from '../../components/Carousel/Carousel';
+import ParallaxBlock from '../../components/ParallaxBlock/ParallaxBlock';
+
 
 const Home = () => {
   return (
     <div className="home-page">
+      <Carousel />
+      <ParallaxBlock />
       <h1>欢迎来到 Home 页面</h1>
       <p>这里是一些示例内容。</p>
     </div>
