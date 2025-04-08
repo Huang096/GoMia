@@ -38,6 +38,10 @@ const ParallaxBlock = () => {
       <div className="parallax-content">
         <h1>Parallax Block</h1>
         <p>这是一个视差滚动效果示例。</p>
+        {/* Read More 按钮 */}
+        <a href="#" className="read-more">
+          Read More
+        </a>
       </div>
     </div>
   );

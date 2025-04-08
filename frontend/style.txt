@@ -12,24 +12,4 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// src/pages/Home/Home.js
-import React from 'react';
-import './Home.css';
-import Carousel from '../../components/Carousel/Carousel';
-import ParallaxBlock from '../../components/ParallaxBlock/ParallaxBlock';
-import VerticalBlock from '../../components/VerticalBlock/VerticalBlock';
-
-
-const Home = () => {
-  return (
-    <div className="home-page">
-      <Carousel />
-      <ParallaxBlock />
-      <VerticalBlock />
-      <h1>欢迎来到 Home 页面</h1>
-      <p>这里是一些示例内容。</p>
-    </div>
-  );
-};
-
-export default Home;
+1. all non-major block height: 800 px

@@ -18,7 +18,7 @@
 .parallax-block {
     position: relative;
     width: 100%;
-    height: 500px; /* 初始高度，可根据需要调整 */
+    height: 800px; /* 初始高度，可根据需要调整 */
     overflow: hidden;
     border: 1px solid #ccc; /* 与 Header/Footer 类似的固定边框 */
   }
@@ -53,3 +53,15 @@
     box-sizing: border-box;
   }
   
+  /* “Read More” 按钮示例 */
+  .read-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    text-shadow: none;    /* 取消继承来的文字阴影 */
+  }
