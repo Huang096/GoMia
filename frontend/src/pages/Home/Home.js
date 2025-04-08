@@ -39,7 +39,7 @@ const Home = () => {
         buttonLink="/details"
       />
 
-      <VerticalSection
+    <VerticalSection
       subtitle="EDUCATIONAL CONSULTING"
       title="选校平台"
       descriptions={[
@@ -58,7 +58,7 @@ const Home = () => {
       buttonLink="#"
     />
 
-<ParallaxBlock
+    <ParallaxBlock
         backgroundImage="https://fancytour.cn/wp-content/uploads/2020/10/WeChat-Image_20201201162917-scaled.jpg"
         height="800px"
         speed={0.2}

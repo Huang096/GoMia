@@ -1,0 +1,79 @@
+/**
+ * Copyright 2025 huangzheheng
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+ .ud_txtimgblock {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;     /* 在下面再加一个下外边距 */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: none;    /* 可选：统一边框 */
+    overflow: hidden;
+  }
+  
+  /* 文本区 */
+  .ti-text {
+    padding: 0px 5%;          /* 上下内边距 40px，左右 5% 留白 */
+    text-align: center;
+    margin-top:0;
+  }
+
+  /* 把所有 ti-text 里的子元素上外边距清掉 */
+  .ti-text > * {
+    margin-top: 0;
+  }
+  
+  
+  /* 副标题：灰色 */
+  .ti-subtitle {
+    font-size: 1rem;
+    color: #999;          /* 浅灰 */
+    margin: 0 0 16px;     /* 底部留空 */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* 主标题 */
+  .ti-title {
+    font-size: 2.25rem;        /* 36px 左右 */
+    color: #c39b6c;          /* 金色 */
+    margin: 0 0 12px;     /* 标题底部留空 */
+    position: relative;
+    line-height: 1.2;
+  }
+  
+  /* 描述文字：深灰/黑 */
+.ti-description {
+    font-size: 1.1rem;
+    color: #222;          /* 深灰/接近黑 */
+    line-height: 1.8;
+    margin: 0 0 24px; /* 下方留 24px 空白 */
+  }
+
+  /* 图片区：剩余高度填满 */
+  .ti-image {
+    flex: 1;
+  }
+  
+  .ti-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
