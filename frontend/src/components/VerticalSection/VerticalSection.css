@@ -1,0 +1,97 @@
+/**
+ * Copyright 2025 huangzheheng
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+ .vertical-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.vs-subtitle {
+  font-size: 0.9rem;
+  color: #999;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.vs-title {
+  font-size: 2.5rem;
+  color: #222;
+  margin: 0;
+}
+
+.vs-divider {
+  width: 40px;
+  height: 2px;
+  background-color: #d1a15f;
+  margin: 12px auto 24px;
+}
+
+.vs-description p {
+  margin: 8px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.vs-icons {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vs-icons li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vs-icon {
+  font-size: 2.5rem;
+  color: #d1a15f;
+  margin-bottom: 8px;
+}
+
+.vs-icons li span {
+  font-size: 1rem;
+  color: #222;
+}
+
+.vs-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: #fff;
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #d1a15f;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.vs-button:hover {
+  background-color: #d1a15f;
+  color: #fff;
+}

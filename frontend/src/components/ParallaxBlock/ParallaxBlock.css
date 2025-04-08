@@ -18,26 +18,22 @@
 .parallax-block {
     position: relative;
     width: 100%;
-    height: 800px; /* 初始高度，可根据需要调整 */
     overflow: hidden;
-    border: 1px solid #ccc; /* 与 Header/Footer 类似的固定边框 */
+    border: none; /* 如不需要边框可改为 none */
   }
   
-  /* 背景层 */
   .parallax-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 140%; /* 稍大于容器，防止移动时出现空白 */
-    background-image: url('https://fancytour.cn/wp-content/uploads/2020/10/WeChat-Image_20201201162917-scaled.jpg');
+    height: 200%;              /* 比容器高，防止滚动出现空白 */
     background-size: cover;
     background-position: center center;
     z-index: 1;
     transition: transform 0.3s ease-out;
   }
   
-  /* 内容层 */
   .parallax-content {
     position: relative;
     z-index: 2;
@@ -47,13 +43,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     padding: 0 5%;
     box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   }
   
-  /* “Read More” 按钮示例 */
+  .parallax-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .parallax-content p {
+    margin: 12px 0;
+    font-size: 1.1rem;
+  }
+  
   .read-more {
     display: inline-block;
     margin-top: 15px;
@@ -63,5 +68,11 @@
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
-    text-shadow: none;    /* 取消继承来的文字阴影 */
+    text-shadow: none;    /* 取消继承来的阴影 */
+    transition: background-color 0.3s, color 0.3s;
   }
+  
+  .read-more:hover {
+    background-color: #eee;
+  }
+  

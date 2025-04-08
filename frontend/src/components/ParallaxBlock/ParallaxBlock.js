@@ -13,38 +13,65 @@
 // limitations under the License.
 
 // src/components/ParallaxBlock/ParallaxBlock.js
+// src/components/ParallaxBlock/ParallaxBlock.js
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import './ParallaxBlock.css';
 
-const ParallaxBlock = () => {
+const ParallaxBlock = ({
+  backgroundImage,
+  height = '500px',
+  speed = 0.15,
+  title,
+  description,
+  buttonText,
+  buttonLink = '#',
+}) => {
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setOffset(window.pageYOffset);
-    };
+    const handleScroll = () => setOffset(window.pageYOffset);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const bgStyle = {
+    backgroundImage: `url(${backgroundImage})`,
+    transform: `translateY(${-offset * speed}px)`,
+  };
+
+  const blockStyle = {
+    height,
+  };
+
   return (
-    <div className="parallax-block">
-      {/* 背景层，使用内联样式动态设置 transform */}
+    <div className="parallax-block" style={blockStyle}>
       <div
         className="parallax-background"
-        style={{ transform: `translateY(${-offset * 0.15}px)` }}
+        style={bgStyle}
       />
-      {/* 内容层 */}
       <div className="parallax-content">
-        <h1>Parallax Block</h1>
-        <p>这是一个视差滚动效果示例。</p>
-        {/* Read More 按钮 */}
-        <a href="#" className="read-more">
-          Read More
-        </a>
+        {title && <h1>{title}</h1>}
+        {description && <p>{description}</p>}
+        {buttonText && (
+          <a href={buttonLink} className="read-more">
+            {buttonText}
+          </a>
+        )}
       </div>
     </div>
   );
 };
 
+ParallaxBlock.propTypes = {
+  backgroundImage: PropTypes.string.isRequired,
+  height: PropTypes.string,
+  speed: PropTypes.number,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  buttonText: PropTypes.string,
+  buttonLink: PropTypes.string,
+};
+
 export default ParallaxBlock;
+
