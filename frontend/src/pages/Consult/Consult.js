@@ -19,6 +19,7 @@ import './Consult.css';
 
 import UD_TxtImgBlock from '../../components/UD_TxtImgBlock/UD_TxtImgBlock';
 import ParallaxBlock from '../../components/ParallaxBlock/ParallaxBlock';
+import LRParallaxBlock from '../../components/LRParallaxBlock/LRParallaxBlock';
 
 const Consult = () => {
   return (
@@ -41,8 +42,23 @@ const Consult = () => {
         buttonLink="/details"
       />
 
-      <h1>欢迎来到 Consult 页面</h1>
-      <p>这里是一些示例内容。</p>
+      <UD_TxtImgBlock
+            title="教育咨询"
+            subtitle="一站式定制化升学规划"
+            description="独立教育顾问全程把关，从需求出发，提供专业、科学的系统咨询。"
+            imageSrc="https://fancytour.cn/wp-content/uploads/2020/10/WeChat-Image_20201201162917-scaled.jpg"
+            height="800px"
+          />
+
+      <LRParallaxBlock
+        backgroundImage="https://fancytour.cn/wp-content/uploads/2020/10/WeChat-Image_20201201162917-scaled.jpg"
+        height="800px"
+        speed={0.3}
+        title="名校申请"
+        description="这个部分展示名校申请的信息"
+        imageSrc="https://fancytour.cn/wp-content/uploads/2020/09/微信图片_20200930143740-700x660.jpg"
+        content="描述内容，展示关于名校申请的更多信息"
+      />
     </div>
   );
 };

@@ -18,7 +18,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 100px;     /* 在下面再加一个下外边距 */
+    margin-bottom: 80px;     /* 在下面再加一个下外边距 */
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -28,9 +28,9 @@
   
   /* 文本区 */
   .ti-text {
-    padding: 0px 5%;          /* 上下内边距 40px，左右 5% 留白 */
+    padding: 0px 5%;
     text-align: center;
-    margin-top:0;
+    margin-top:40px;
   }
 
   /* 把所有 ti-text 里的子元素上外边距清掉 */

@@ -58,7 +58,7 @@ const Header = () => {
             <li><Link to="/contact">联系我们</Link></li>
             <li>
                 <a href="#" className="search-icon">
-                    <FaSearch />
+                    <FaSearch size = {20} />
                 </a>
             </li>
           </ul>
