@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GoMia/static/css/main.4431e358.css",
+    "main.js": "/GoMia/static/js/main.e13432b4.js",
+    "index.html": "/GoMia/index.html",
+    "main.4431e358.css.map": "/GoMia/static/css/main.4431e358.css.map",
+    "main.e13432b4.js.map": "/GoMia/static/js/main.e13432b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4431e358.css",
+    "static/js/main.e13432b4.js"
+  ]
+}
