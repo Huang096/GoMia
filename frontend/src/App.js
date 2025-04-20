@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/Layout/ScrollToTop';
 
 import Home from "./pages/Home/Home";
 import Yanxue from "./pages/Yanxue/Yanxue";
@@ -12,6 +13,7 @@ import Contact from "./pages/Contact/Contact";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

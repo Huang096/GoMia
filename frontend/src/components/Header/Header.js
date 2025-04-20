@@ -15,7 +15,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -51,15 +51,51 @@ const Header = () => {
         {/* 导航菜单 */}
         <nav className="main-nav">
           <ul>
-            <li><Link to="/">首页</Link></li>
-            <li><Link to="/yanxue">研学服务</Link></li>
-            <li><Link to="/xuanxiao">选校平台</Link></li>
-            <li><Link to="/consult">教育咨询</Link></li>
-            <li><Link to="/contact">联系我们</Link></li>
             <li>
-                <a href="#" className="search-icon">
-                    <FaSearch size = {20} />
-                </a>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) => isActive ? 'active-link' : undefined}
+              >
+                首页
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/yanxue"
+                className={({ isActive }) => isActive ? 'active-link' : undefined}
+              >
+                研学服务
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/xuanxiao"
+                className={({ isActive }) => isActive ? 'active-link' : undefined}
+              >
+                选校平台
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/consult"
+                className={({ isActive }) => isActive ? 'active-link' : undefined}
+              >
+                教育咨询
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) => isActive ? 'active-link' : undefined}
+              >
+                关于我们
+              </NavLink>
+            </li>
+            <li>
+              <a href="#" className="search-icon">
+                <FaSearch size={20} />
+              </a>
             </li>
           </ul>
         </nav>

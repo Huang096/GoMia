@@ -17,7 +17,7 @@
  .carousel {
     position: relative;   /* 让左右按钮能够绝对定位 */
     width: 100%;
-    height: 600px;        /* 根据需求设置高度，比如 90vh */
+    height: 900px;        /* 根据需求设置高度，比如 90vh */
     overflow: hidden;
   }
   

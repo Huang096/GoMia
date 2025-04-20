@@ -16,14 +16,36 @@
 // src/pages/Consult/Consult.js
 import React from 'react';
 import './Consult.css';
+import { FaBaby, FaBuilding, FaUserGraduate } from 'react-icons/fa';
 
 import UD_TxtImgBlock from '../../components/UD_TxtImgBlock/UD_TxtImgBlock';
 import ParallaxBlock from '../../components/ParallaxBlock/ParallaxBlock';
 import LRParallaxBlock from '../../components/LRParallaxBlock/LRParallaxBlock';
+import VerticalSection from '../../components/VerticalSection/VerticalSection';
 
 const Consult = () => {
   return (
     <div className="consult-page">
+
+    <VerticalSection
+      subtitle="EDUCATIONAL CONSULTING"
+      title="教育咨询"
+      descriptions={[
+        '名校申请 · 藤校访学 · 背景提升 教育规划',
+        '一站式，定制化的升学规划方案',
+        '独立教育顾问全程把关',
+        '从需求出发，提供专业、科学的系统咨询',
+        '制定整体解决方案',
+      ]}
+      items={[
+        { icon: <FaBaby />, label: '低龄培养' },
+        { icon: <FaBuilding />, label: '全能高中' },
+        { icon: <FaUserGraduate />, label: '本科及研究生' },
+      ]}
+      buttonText="了解详情 →"
+      buttonLink="#"
+    />
+      
     <UD_TxtImgBlock
       title="教育咨询"
       subtitle="一站式定制化升学规划"
